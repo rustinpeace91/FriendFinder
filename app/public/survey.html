@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en-us">
+
+        <head>
+      
+          <meta charset="UTF-8">
+          <title>Employee Tracker</title>
+      
+          <!-- Bootstrap -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+          <!-- Moment.js Reference -->
+          <!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
+          <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+          <script src="https://code.jquery.com/jquery.js"></script>
+      
+        </head>
+      
+<body>
+    <div class = "container">
+        <div class="card">
+            <form>
+                <h5 class="card-header">Survey</h5>
+                <div class="card-body">
+                    <div class = "form-group">
+                        <h3>Question 1</h3>
+                        <strong class = "question">Ice Cream is disgusting</strong>
+                        <select id = "question-1" class="custom-select form-group ">
+                            <option data-index-number = "1">1 (Strongly Disagree)</option>
+                            <option data-index-number = "2">2</option>
+                            <option data-index-number = "3">3</option>
+                            <option data-index-number = "4">4</option>
+                            <option data-index-number = "5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <div class = "form-group">
+                            <h3>Question 2</h3>
+                            <strong class = "question">Getting stuck in traffic is a lot of fun for you</strong>
+                            <select id = "question-2" class="custom-select form-group ">
+                                <option data-index-number = "1">1 (Strongly Disagree)</option>
+                                <option data-index-number = "2">2</option>
+                                <option data-index-number = "3">3</option>
+                                <option data-index-number = "4">4</option>
+                                <option data-index-number = "5">5 (Strongly Agree)</option>
+                            </select>
+                    </div>
+                    <div class = "form-group">
+                            <h3>Question 3</h3>
+                            <strong class = "question">When you get lost you can usually figure it out by talking to yourself for a few minutes.</strong>
+                            <select id = "question-3" class="custom-select form-group ">
+                                <option data-index-number = "1">1 (Strongly Disagree)</option>
+                                <option data-index-number = "2">2</option>
+                                <option data-index-number = "3">3</option>
+                                <option data-index-number = "4">4</option>
+                                <option data-index-number = "5">5 (Strongly Agree)</option>
+                            </select>
+                    </div>
+                    <div class = "form-group">
+                            <h3>Question 4</h3>
+                            <strong class = "question">Generally speaking, you don't know what you're doing. You're just kind of winging it</strong>
+                            <select id = "question-4" class="custom-select form-group ">
+                                <option data-index-number = "1">1 (Strongly Disagree)</option>
+                                <option data-index-number = "2">2</option>
+                                <option data-index-number = "3">3</option>
+                                <option data-index-number = "4">4</option>
+                                <option data-index-number = "5">5 (Strongly Agree)</option>
+                            </select>
+                    </div>
+                    <div class = "form-group">
+                            <h3>Question 5</h3>
+                            <strong class = "question">Better to have the glass half full than half empty</strong>
+                            <select id = "question-5" class="custom-select form-group ">
+                                <option data-index-number = "1">1 (Strongly Disagree)</option>
+                                <option data-index-number = "2">2</option>
+                                <option data-index-number = "3">3</option>
+                                <option data-index-number = "4">4</option>
+                                <option data-index-number = "5">5 (Strongly Agree)</option>
+                            </select>
+                    </div>
+                    <div class = "form-group">
+                            <h3>Question 6</h3>
+                            <strong class = "question">You can predict anyone's future by looking at their astrological sign and you know what is goign to happen to them in the future</strong>
+                            <select id = "question-6" class="custom-select form-group ">
+                                <option data-index-number = "1">1 (Strongly Disagree)</option>
+                                <option data-index-number = "2">2</option>
+                                <option data-index-number = "3">3</option>
+                                <option data-index-number = "4">4</option>
+                                <option data-index-number = "5">5 (Strongly Agree)</option>
+                            </select>
+                    </div>
+                    <div class = "form-group">
+                            <h3>Question 7</h3>
+                            <strong class = "question">You may say you're a dreamer, but you're not the only one</strong>
+                            <select id = "question-7" class="custom-select form-group ">
+                                <option data-index-number = "1">1 (Strongly Disagree)</option>
+                                <option data-index-number = "2">2</option>
+                                <option data-index-number = "3">3</option>
+                                <option data-index-number = "4">4</option>
+                                <option data-index-number = "5">5 (Strongly Agree)</option>
+                            </select>
+                    </div>
+                    <div class = "form-group">
+                            <h3>Question 8</h3>
+                            <strong class = "question">You can tell imediatly whether you will mesh with someone by measuring the thickness of their eyebrows in millimeters</strong>
+                            <select id = "question-8" class="custom-select form-group ">
+                                <option data-index-number = "1">1 (Strongly Disagree)</option>
+                                <option data-index-number = "2">2</option>
+                                <option data-index-number = "3">3</option>
+                                <option data-index-number = "4">4</option>
+                                <option data-index-number = "5">5 (Strongly Agree)</option>
+                            </select>
+                    </div>
+                    <div class = "form-group">
+                            <h3>Question 9</h3>
+                            <strong class = "question">Dumpster diving is a perfectly legitimate idea for a first date</strong>
+                            <select id = "question-9" class="custom-select form-group ">
+                                <option data-index-number = "1">1 (Strongly Disagree)</option>
+                                <option data-index-number = "2">2</option>
+                                <option data-index-number = "3">3</option>
+                                <option data-index-number = "4">4</option>
+                                <option data-index-number = "5">5 (Strongly Agree)</option>
+                            </select>
+                    </div>
+                    <div class = "form-group">
+                            <h3>Question 10</h3>
+                            <strong class = "question">Time scares you. Like what is it doing? you can't stop it</strong>
+                            <select id = "question-10" class="custom-select form-group ">
+                                <option data-index-number = "1">1 (Strongly Disagree)</option>
+                                <option data-index-number = "2">2</option>
+                                <option data-index-number = "3">3</option>
+                                <option data-index-number = "4">4</option>
+                                <option data-index-number = "5">5 (Strongly Agree)</option>
+                            </select>
+                    </div>
+                </form>
+              <button type = "submit" id = "submit" class="btn btn-primary">Submit</a>
+            </div>
+          </div>
+    </div>
+</body>
+<script type = "text/javascript">
+    $("#submit").on("click", function(event) {
+        event.preventDefault();
+
+        var newFriend = {
+            "name": "Jack",
+            "photo": "google.com",
+            "scores": []
+        };
+        for(var i = 0; i < 10; i++){
+            var questNum = i + 1;
+            newFriend.scores[i] = $("#question-" + questNum).find(':selected').data('index-number');
+        };
+
+        $.post("/api/friends", newFriend, function(data){
+            alert("friend posted!!");
+            for(var i = 0; i < 10; i++){
+            var questNum = i + 1;
+            $("#question-" + questNum).val("1 (Strongly Disagree)");
+        };
+        })
+
+
+    });
+</script>
+</html>

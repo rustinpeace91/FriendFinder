@@ -1,9 +1,16 @@
-var express = require('express');
-var router = express.Router();
+var friends = require("../data/friends.js");
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+function htmlRoute(app){
+  app.get("/api/friends", function(req, res){
+    res.json(friends);
+  });
 
-module.exports = router;
+ app.post("/api/tables", function(req, res) {
+   friends.push(req.body);
+   res.json(true);
+ });
+ 
+
+};
+
+module.exports = htmlRoute;
