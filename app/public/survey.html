@@ -6,18 +6,23 @@
       
           <meta charset="UTF-8">
           <title>Friend Freak</title>
-      
+        
+          <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
           <!-- Bootstrap -->
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       
           <!-- Moment.js Reference -->
+
+
           <!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
           <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-          <script src="https://code.jquery.com/jquery.js"></script>
+
+          <!--<script type="text/javascript" src="comparelogic.js"></script>-->
       
         </head>
       
@@ -25,7 +30,7 @@
     <div class = "container">
         <div class="card">
             <form>
-                <h5 class="card-header">Survey</h5>
+                <h5 class="card-header">Personality Survey</h5>
                 <div class="card-body">
                     <div class = "form-group">
                         <strong>Name:</strong>
@@ -35,7 +40,7 @@
                     </div>
                     <div class = "form-group">
                         <h3>Question 1</h3>
-                        <strong class = "question">Ice Cream is disgusting</strong>
+                        <strong class = "question">You enjoy meeting new people.</strong>
                         <select id = "question-1" class="custom-select form-group ">
                             <option data-index-number = "1">1 (Strongly Disagree)</option>
                             <option data-index-number = "2">2</option>
@@ -46,7 +51,7 @@
                     </div>
                     <div class = "form-group">
                             <h3>Question 2</h3>
-                            <strong class = "question">Getting stuck in traffic is a lot of fun for you</strong>
+                            <strong class = "question">Getting stuck in traffic is not a lot of fun for you</strong>
                             <select id = "question-2" class="custom-select form-group ">
                                 <option data-index-number = "1">1 (Strongly Disagree)</option>
                                 <option data-index-number = "2">2</option>
@@ -57,7 +62,7 @@
                     </div>
                     <div class = "form-group">
                             <h3>Question 3</h3>
-                            <strong class = "question">When you get lost you can usually figure it out by talking to yourself for a few minutes.</strong>
+                            <strong class = "question">You consider other people’s feelings.</strong>
                             <select id = "question-3" class="custom-select form-group ">
                                 <option data-index-number = "1">1 (Strongly Disagree)</option>
                                 <option data-index-number = "2">2</option>
@@ -79,7 +84,7 @@
                     </div>
                     <div class = "form-group">
                             <h3>Question 5</h3>
-                            <strong class = "question">Better to have the glass half full than half empty</strong>
+                            <strong class = "question">Better to have the glass half full than half empty. If it's half empty you might as well pour it all out</strong>
                             <select id = "question-5" class="custom-select form-group ">
                                 <option data-index-number = "1">1 (Strongly Disagree)</option>
                                 <option data-index-number = "2">2</option>
@@ -90,7 +95,7 @@
                     </div>
                     <div class = "form-group">
                             <h3>Question 6</h3>
-                            <strong class = "question">You can predict anyone's future by looking at their astrological sign and you know what is goign to happen to them in the future</strong>
+                            <strong class = "question">You have highly original ideas.</strong>
                             <select id = "question-6" class="custom-select form-group ">
                                 <option data-index-number = "1">1 (Strongly Disagree)</option>
                                 <option data-index-number = "2">2</option>
@@ -112,7 +117,7 @@
                     </div>
                     <div class = "form-group">
                             <h3>Question 8</h3>
-                            <strong class = "question">You can tell imediatly whether you will mesh with someone by measuring the thickness of their eyebrows in millimeters</strong>
+                            <strong class = "question">You can tell imediatly whether you like someone by measuring the thickness of their eyebrows in millimeters</strong>
                             <select id = "question-8" class="custom-select form-group ">
                                 <option data-index-number = "1">1 (Strongly Disagree)</option>
                                 <option data-index-number = "2">2</option>
@@ -134,7 +139,7 @@
                     </div>
                     <div class = "form-group">
                             <h3>Question 10</h3>
-                            <strong class = "question">Time scares you. Like what is it doing? you can't stop it</strong>
+                            <strong class = "question">You consider yourself a go getter</strong>
                             <select id = "question-10" class="custom-select form-group ">
                                 <option data-index-number = "1">1 (Strongly Disagree)</option>
                                 <option data-index-number = "2">2</option>
@@ -148,8 +153,61 @@
             </div>
           </div>
     </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="match" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div id = "match-body" class="modal-body" style = "word-wrap: break-word;">
+                ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 <script type = "text/javascript">
+
+
+function closestFriend(me, friends, func){
+    var me = me;
+    var friends = friends;
+    var them = friends[0];
+    var differental = 0;
+    var lowestDiff = 100000;
+    var closestFriend = them[0];
+    var percent = 0;
+    for(var i = 0; i < friends.length; i++){
+        them = friends[i];
+        if(them.name != me.name){
+            differental = 0;
+            for(var o = 0; o < 10; o++){
+                var diff = Math.abs(me.scores[o] - them.scores[o]);
+                differental += diff;
+            };
+            if(differental < lowestDiff){
+                closestFriend = them;
+                lowestDiff = differental;
+            };
+
+        };
+    };
+    percent = parseInt((((40 - lowestDiff) / 40) * 100));
+    func(closestFriend, percent);
+};
+
+
+
+
     $("#submit").on("click", function(event) {
         event.preventDefault();
 
@@ -158,6 +216,7 @@
             "photo": "google.com",
             "scores": []
         };
+
         if($("#name").val() === "" || $("photo").val() === ""){
             alert("please fill out all forms");
         } else {
@@ -173,7 +232,8 @@
                 console.log(parseInt(answer));
                 console.log(typeof(newFriend.scores[i]));
             };
-
+            
+            var currentURL = window.location.origin;
             $.ajax({
                 url: "/api/friends",
                 type: "post",
@@ -188,6 +248,16 @@
                     var questNum = i + 1;
                     $("#question-" + questNum).val("1 (Strongly Disagree)");
                 };
+                $.ajax({ url: currentURL + "/api/friends", method: "GET" }).then(function(friends){
+                    closestFriend(newFriend, friends, function(match, percent){
+                        var text = "<p>Closest Match Name: " + match.name + "</p>" +
+                                   "<p>" + percent + "% Match</p>";
+                        $("#match-body").html(text);
+                        $("#match").modal("toggle");
+                    });
+
+
+                });
 
             })
         };

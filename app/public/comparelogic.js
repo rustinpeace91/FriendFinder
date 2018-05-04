@@ -24,5 +24,5 @@ function closestFriend(me, friends, func){
     func(closestFriend);
 };
 
-//module.exports = closestFriend;
+module.exports = closestFriend;
 
