@@ -5,7 +5,7 @@
         <head>
       
           <meta charset="UTF-8">
-          <title>Employee Tracker</title>
+          <title>Friend Freak</title>
       
           <!-- Bootstrap -->
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -27,6 +27,12 @@
             <form>
                 <h5 class="card-header">Survey</h5>
                 <div class="card-body">
+                    <div class = "form-group">
+                        <strong>Name:</strong>
+                        <input type="text" class="form-control form-group" id="name" placeholder="Example input">
+                        <strong>Photo URL:</strong>
+                        <input type="text" class="form-control form-group" id="photo" placeholder="Example input">
+                    </div>
                     <div class = "form-group">
                         <h3>Question 1</h3>
                         <strong class = "question">Ice Cream is disgusting</strong>
@@ -152,19 +158,39 @@
             "photo": "google.com",
             "scores": []
         };
-        for(var i = 0; i < 10; i++){
-            var questNum = i + 1;
-            newFriend.scores[i] = $("#question-" + questNum).find(':selected').data('index-number');
-        };
+        if($("#name").val() === "" || $("photo").val() === ""){
+            alert("please fill out all forms");
+        } else {
+            newFriend.name = $("#name").val().trim();
+            newFriend.photo = $("#photo").val().trim();
 
-        $.post("/api/friends", newFriend, function(data){
-            alert("friend posted!!");
+
+
             for(var i = 0; i < 10; i++){
-            var questNum = i + 1;
-            $("#question-" + questNum).val("1 (Strongly Disagree)");
-        };
-        })
+                var questNum = i + 1;
+                var answer = $("#question-" + questNum).find(':selected').data('index-number');
+                newFriend.scores[i] = parseInt(answer);
+                console.log(parseInt(answer));
+                console.log(typeof(newFriend.scores[i]));
+            };
 
+            $.ajax({
+                url: "/api/friends",
+                type: "post",
+                dataType: 'json',
+                contentType: "application/json",
+                data: JSON.stringify(newFriend)
+            }).then(function(){
+
+                alert("friend posted!!");
+
+                for(var i = 0; i < 10; i++){
+                    var questNum = i + 1;
+                    $("#question-" + questNum).val("1 (Strongly Disagree)");
+                };
+
+            })
+        };
 
     });
 </script>
