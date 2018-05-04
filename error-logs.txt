@@ -1,0 +1,66 @@
+2018-05-04T03:55:17.268435+00:00 app[api]: Initial release by user isaaclubanko@gmail.com
+2018-05-04T03:55:17.268435+00:00 app[api]: Release v1 created by user isaaclubanko@gmail.com
+2018-05-04T03:55:17.370675+00:00 app[api]: Enable Logplex by user isaaclubanko@gmail.com
+2018-05-04T03:55:17.370675+00:00 app[api]: Release v2 created by user isaaclubanko@gmail.com
+2018-05-04T03:57:29.000000+00:00 app[api]: Build started by user isaaclubanko@gmail.com
+2018-05-04T03:57:38.438334+00:00 app[api]: Deploy 80031c93 by user isaaclubanko@gmail.com
+2018-05-04T03:57:38.438334+00:00 app[api]: Release v3 created by user isaaclubanko@gmail.com
+2018-05-04T03:57:38.459034+00:00 app[api]: Scaled to web@1:Free by user isaaclubanko@gmail.com
+2018-05-04T03:57:29.000000+00:00 app[api]: Build succeeded
+2018-05-04T03:57:41.267724+00:00 heroku[web.1]: Starting process with command `npm start`
+2018-05-04T03:57:44.567427+00:00 heroku[web.1]: State changed from starting to crashed
+2018-05-04T03:57:44.569506+00:00 heroku[web.1]: State changed from crashed to starting
+2018-05-04T03:57:44.156661+00:00 app[web.1]: 
+2018-05-04T03:57:44.156682+00:00 app[web.1]: > node ./bin/www
+2018-05-04T03:57:44.156681+00:00 app[web.1]: > myapp@0.0.0 start /app
+2018-05-04T03:57:44.156684+00:00 app[web.1]: 
+2018-05-04T03:57:44.344866+00:00 app[web.1]: module.js:549
+2018-05-04T03:57:44.344870+00:00 app[web.1]:     throw err;
+2018-05-04T03:57:44.344871+00:00 app[web.1]:     ^
+2018-05-04T03:57:44.344873+00:00 app[web.1]: 
+2018-05-04T03:57:44.344875+00:00 app[web.1]: Error: Cannot find module '/app/bin/www'
+2018-05-04T03:57:44.344880+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:547:15)
+2018-05-04T03:57:44.344881+00:00 app[web.1]:     at Function.Module._load (module.js:474:25)
+2018-05-04T03:57:44.344883+00:00 app[web.1]:     at Function.Module.runMain (module.js:693:10)
+2018-05-04T03:57:44.344884+00:00 app[web.1]:     at startup (bootstrap_node.js:188:16)
+2018-05-04T03:57:44.344886+00:00 app[web.1]:     at bootstrap_node.js:609:3
+2018-05-04T03:57:44.358225+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2018-05-04T03:57:44.358794+00:00 app[web.1]: npm ERR! errno 1
+2018-05-04T03:57:44.360884+00:00 app[web.1]: npm ERR! myapp@0.0.0 start: `node ./bin/www`
+2018-05-04T03:57:44.361182+00:00 app[web.1]: npm ERR! Exit status 1
+2018-05-04T03:57:44.361764+00:00 app[web.1]: npm ERR! 
+2018-05-04T03:57:44.362385+00:00 app[web.1]: npm ERR! Failed at the myapp@0.0.0 start script.
+2018-05-04T03:57:44.362757+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2018-05-04T03:57:44.375743+00:00 app[web.1]: 
+2018-05-04T03:57:44.376158+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2018-05-04T03:57:44.376336+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2018-05-04T03_57_44_366Z-debug.log
+2018-05-04T03:57:44.474361+00:00 heroku[web.1]: Process exited with status 1
+2018-05-04T03:57:46.437016+00:00 heroku[web.1]: Starting process with command `npm start`
+2018-05-04T03:57:48.229024+00:00 app[web.1]: > myapp@0.0.0 start /app
+2018-05-04T03:57:48.229025+00:00 app[web.1]: > node ./bin/www
+2018-05-04T03:57:48.229027+00:00 app[web.1]: 
+2018-05-04T03:57:48.229003+00:00 app[web.1]: 
+2018-05-04T03:57:48.303654+00:00 app[web.1]: module.js:549
+2018-05-04T03:57:48.303658+00:00 app[web.1]:     throw err;
+2018-05-04T03:57:48.303660+00:00 app[web.1]:     ^
+2018-05-04T03:57:48.303664+00:00 app[web.1]: 
+2018-05-04T03:57:48.303667+00:00 app[web.1]: Error: Cannot find module '/app/bin/www'
+2018-05-04T03:57:48.303669+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:547:15)
+2018-05-04T03:57:48.303671+00:00 app[web.1]:     at Function.Module._load (module.js:474:25)
+2018-05-04T03:57:48.303673+00:00 app[web.1]:     at Function.Module.runMain (module.js:693:10)
+2018-05-04T03:57:48.303677+00:00 app[web.1]:     at bootstrap_node.js:609:3
+2018-05-04T03:57:48.313094+00:00 app[web.1]: npm ERR! errno 1
+2018-05-04T03:57:48.312781+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2018-05-04T03:57:48.314242+00:00 app[web.1]: npm ERR! myapp@0.0.0 start: `node ./bin/www`
+2018-05-04T03:57:48.314405+00:00 app[web.1]: npm ERR! Exit status 1
+2018-05-04T03:57:48.314639+00:00 app[web.1]: npm ERR! 
+2018-05-04T03:57:48.303675+00:00 app[web.1]:     at startup (bootstrap_node.js:188:16)
+2018-05-04T03:57:48.314812+00:00 app[web.1]: npm ERR! Failed at the myapp@0.0.0 start script.
+2018-05-04T03:57:48.314970+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2018-05-04T03:57:48.319370+00:00 app[web.1]: 
+2018-05-04T03:57:48.319753+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2018-05-04T03_57_48_316Z-debug.log
+2018-05-04T03:57:48.319607+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2018-05-04T03:57:48.409108+00:00 heroku[web.1]: State changed from starting to crashed
+2018-05-04T03:57:48.370943+00:00 heroku[web.1]: Process exited with status 1
+2018-05-04T04:03:07.263256+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=ancient-forest-88674.herokuapp.com request_id=a0af7e61-162f-4604-97b9-596a907ac020 fwd="173.75.219.189" dyno= connect= service= status=503 bytes= protocol=https
+2018-05-04T04:03:07.842739+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=ancient-forest-88674.herokuapp.com request_id=c1a9bb1b-8de2-4b75-bd2d-324bcac8a000 fwd="173.75.219.189" dyno= connect= service= status=503 bytes= protocol=https

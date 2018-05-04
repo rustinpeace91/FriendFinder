@@ -6,11 +6,11 @@ function htmlRoute(app){
     res.json(friends);
   });
 
- app.post("/api/friends", function(req, res) {
+ app.post("/api/friends", function(req, res,) {
    console.log(req.headers);
    friends.push(req.body);
    console.log(JSON.stringify(req.body, null, 4));
-   res.json(true);
+   res.json(true); 
  });
  
 
