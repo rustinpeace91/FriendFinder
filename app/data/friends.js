@@ -1,8 +1,8 @@
 
 var friends = [
   {
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name":"Keeeth",
+    "photo":"https://i.imgur.com/XkhkZtq.jpg",
     "scores":[
         5,
         1,
@@ -19,7 +19,7 @@ var friends = [
 
   {
     "name":"Biff",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://i.imgur.com/hYuwZuf.jpg",
     "scores":[
         5,
         1,
@@ -32,7 +32,25 @@ var friends = [
         4,
         1
       ]
-  }
+  },
+  {
+    "name": "Doggo",
+    "photo": "https://i.imgur.com/PCiZpM6.jpg",
+    "scores": [
+        3,
+        2,
+        5,
+        2,
+        1,
+        5,
+        2,
+        4,
+        3,
+        2
+    ]
+}
+
+
   
 ]
 module.exports = friends;

@@ -31,7 +31,9 @@
         <div class="card">
             <form>
                 <h5 class="card-header">Personality Survey</h5>
+
                 <div class="card-body">
+                        <p>type your name and a valid URL of a photo of yourself. Then answer the questions.</p>
                     <div class = "form-group">
                         <strong>Name:</strong>
                         <input type="text" class="form-control form-group" id="name" placeholder="Example input">
@@ -251,7 +253,9 @@ function closestFriend(me, friends, func){
                 $.ajax({ url: currentURL + "/api/friends", method: "GET" }).then(function(friends){
                     closestFriend(newFriend, friends, function(match, percent){
                         var text = "<p>Closest Match Name: " + match.name + "</p>" +
-                                   "<p>" + percent + "% Match</p>";
+                                    "<p>" + percent + "% Match</p>" +
+                                   "<div><img src=" + match.photo + " style = 'width:90%;'></div>";
+
                         $("#match-body").html(text);
                         $("#match").modal("toggle");
                     });
