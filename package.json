@@ -1,9 +1,9 @@
 {
-  "name": "myapp",
+  "name": "FriendFinder",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node server.js"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/rustinpeace91/FriendFinder/issues"
   },
-  "homepage": "https://github.com/rustinpeace91/FriendFinder#readme"
+  "homepage": "https://github.com/rustinpeace91/FriendFinder#readme",
+  "keywords": []
 }
