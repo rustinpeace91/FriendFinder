@@ -12,10 +12,11 @@ var PORT = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-
+//initial server listen. This is what starts the actual program
 app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
 });
 
+//passes the app
 require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);

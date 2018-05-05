@@ -1,3 +1,5 @@
+//This page serves up the HTML pages
+
 var path = require("path");
 
 function htmlRoute(app){
