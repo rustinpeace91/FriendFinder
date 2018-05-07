@@ -1,5 +1,4 @@
 var friends = require("../data/friends.js");
-var compare = require("../data/comparelogic.js");
 
 function htmlRoute(app){
   app.get("/api/friends", function(req, res){

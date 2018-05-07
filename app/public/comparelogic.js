@@ -24,5 +24,7 @@ function closestFriend(me, friends, func){
     func(closestFriend);
 };
 
-module.exports = closestFriend;
+console.log('yeah');
+
+//module.exports = closestFriend;
 

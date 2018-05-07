@@ -21,7 +21,7 @@
           <!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
           <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
-          <!--<script type="text/javascript" src="comparelogic.js"></script>-->
+          <script type="text/javascript" src="comparelogic.js"></script>
       
         </head>
       
@@ -181,7 +181,7 @@
 //the logic that determines which friend in the friends array most closely matches the values just entered
 //takes, your data as an object, the entire friends object array, and a callback
 
-    function closestFriend(me, friends, func){
+   /* function closestFriend(me, friends, func){
         var me = me;
         var friends = friends;
         var them = friends[0];
@@ -206,10 +206,12 @@
             };
         };
 
+
         //decided to display a percentage as well.  the greatest difference possible = 40 (5-1 times 10), 
         percent = parseInt((((40 - lowestDiff) / 40) * 100));
         func(closestFriend, percent);
-    };
+    };*/
+
 
     //submit event. stores data in object newFriend, pushes it to the Friends object array. runs comparison logic (whch will skip your data), and displays match info to the modal
     $("#submit").on("click", function(event) {
